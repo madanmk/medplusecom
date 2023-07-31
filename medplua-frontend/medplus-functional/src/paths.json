@@ -1,0 +1,15 @@
+{
+    "BASE_URL":"http://localhost:8000",
+    "ADMIN_LOGIN":"/admin/login",
+    "FETCH_CATEGORIES":"/category/",
+    "FETCH_PRODUCTS":"/product/",
+    "DELETE_PRODUCT":"/product/delete/",
+    "UPDATE_PRODUCT":"/product/update/",
+    "SINGLE_IMAGE_UPLOAD":"/product/addnewimage/",
+    "SINGLE_IMAGE_DELETE":"/product/deleteSinIMg/",
+    "VENDOR_REGISTRATION":"/vendor/create/",
+    "VENDOR_LOGIN":"/vendor/login",
+    "FETCH_VENDORS":"/vendor/vendors",
+    "SEARCH_PRODUCTS":"/vendor/searchproduct/",
+    "CREATE_VENDOR_PRODUCT":"/vendor/vendorproduct"
+}

@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.img-container{
+    width: 100%;
+    height: auto;
+}
+
+/*Header Page Css*/
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(50,50,93,0.25);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo>a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo>a>h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Oswald',sans-serif;
+}
+
+.logo>a>h1>span{
+    color: #159972;
+}
+
+.right-header{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    width:50%;
+}
+
+.search-area{
+    width:60%;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.search-bar{
+    background-color: #159972;
+    padding: 5px 20px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.search-results{
+    width: 100%;
+    padding: 5px 20px;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    top:42px;
+    box-shadow: 0 0 1px gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.search-result{
+    padding: 10px;
+    transition: .2s;
+}
+
+.search-result:hover{
+    color: #159972;
+}
+
+.search-bar>input{
+    width: 90%;
+    outline: none;
+    padding: 10px 0px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.search-bar>input::placeholder{
+    color: rgb(231,231,231);
+    font-size: 15px;
+}
+
+.search-bar>i{
+    color: rgb(231,231,231);
+}
+
+.btni{
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #159972;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-container{
+    color: #159972;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3px;
+}
+
+.link-text{
+    font-size: 16px;
+    color: grey;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*Products Page*/
+.products{
+    background-color: rgb(231,231,231);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.products:nth-child(even){
+    background-color: rgb(231,231,231);
+}
+
+.products-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-title{
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(39,39,39);
+    font-family: 'Segoe UI';
+}
+
+.card-btn{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+}
+
+.products-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.8%;
+}
+
+.product-card{
+    background-color: #fff;
+    width: 16%;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.product-card:hover{
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+
+.card-img{
+    width:100%;
+    padding: 4px;
+    
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-family: 'Segoe UI';
+    margin-bottom: 7px;
+}
+
+.card-detail{
+    font-size: 12px;
+    color: grey;
+    font-family: 'Segoe UI';
+    margin-bottom: 5px;
+}
+
+.card-rating{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 5px;
+}
+
+.star-rating{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background-color: rgb(35,155,61);
+    padding: 4px 6px;
+    border-radius: 2px;
+    color:#fff;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+}
+
+.star-rating>i{
+    font-size: 12px;
+}
+
+.card-rating>p{
+    font-size: 14px;
+    color: gray;
+}
+
+.price-info{
+    font-size: 13px;
+    color: grey;
+}
+
+.price-info>span{
+    color: rgb(24,177,24);
+    font-weight:700;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(58,58,58);
+}
+
+/*Login and Signup Page Css*/
+.signup-container,.login-container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signup-place,.login-place{
+    width: 30%;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 0 8px gray;
+}
+
+.btn{
+    background-color: blue;
+}
+
+/*Single Product css*/
+.single-img{
+    width:20%;
+    padding: 10px;
+}
+
+.p-cart-box{
+   padding: 10px 20px;
+   
+}
+
+.product-price{
+   display: flex;
+   margin-bottom: 10px;
+   align-items: center;
+}
+
+.product-price>input{
+   margin-right: 15px;
+   width: 15px;
+   height: 15px;
+ }
+
+.sm-p{
+  color: grey;
+  font-size: 16px;
+}
+
+.percent{
+   color: #159972;
+}
+
+.quantity-input
+{
+    width: 20%;
+    height: 40px;
+    text-indent: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 10px 0px;
+}
+
+.total-price{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.order-placement{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*to display model when we click place order button*/
+.custom-modal-overlay
+{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.3);
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*display: none;*/
+}
+
+.custom-modal-body
+{
+    width: 70%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 50px;
+}
+
+.order-table th,.order-table td{
+    padding: 10px;
+    text-align: left;
+}
+
+.address-form{
+    width:50%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+}
+
+.address-form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    text-indent: 20px;
+}
+
+.addresses{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.address{
+    border: 1px solid gray;
+    padding: 7px;
+    border-radius: 10px;
+    width: 70%;
+    cursor: pointer;
+}
+
+.address:hover{
+    border: 1px solid red;   
+}
+
+.selectedAddress{
+    border: 1px solid red;
+    box-shadow: 0 0 2px red;
+}
+
+.checkout-btn{
+    background-color: #ff3800 !important;
+    width: 100%;
+}
+
+/*css for order page*/
+.single-order{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+   /* background-color: green;*/
+    box-shadow: 0 0 2px gray;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+.order-products{
+    display: flex;
+    flex-grow: 1;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.order-product{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.delivery-details{
+    /*background-color: red;*/
+    width: 45%;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.state_highlight{
+    font-weight: bold;
+}
+
+/*css for prescription*/
+.prescription-header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prescriptions{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 30px;
+}
+
+.prescription{
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 2px gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.prescription-details{
+    width: 100%;
+    display: flex;
+    column-gap: 2%;
+}
+
+.pres-child{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.pres-img{
+    width: 100%;
+}
+
+.pres-product{
+    display: flex;
+    column-gap: 20px;
+}
+
+.pres-child:nth-child(3)
+{
+    width: 30%;
+}
+
+.invoice{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+   /* background-color: red;*/
+    padding: 20px;
+}
+
+.extra-info{
+    display: flex;
+    column-gap: 200px;
+}
+
+.invoice-address{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+/*section for printing*/
+/*body is hidden, classname which we given that is selected here invoice class and its contents 
+selected in line number 544 and invoice comes on top we gave position as absolute so*/
+@media print{
+    @page{
+        size:portrait;
+    }
+    body *{
+        visibility: hidden;
+    }
+    .invoice,.invoice *{
+        visibility: visible;
+    }
+    .invoice{
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+}
+
+
+/*chat css*/
+.chatbox{
+    width: 550px;
+   /* background-color: red;*/
+    height: 400px;
+    position: fixed;
+    z-index: 100;
+    bottom: 30px;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+.chat-icon{
+    width: 100px;
+    height: 100px;
+    background-color: #159972;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border-radius: 50%;
+    color:white;
+    cursor: pointer;
+}
+
+.chat-area{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+
+.support-person
+{
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    font-family: 'Segoe UI';
+    box-shadow: 0 0 2px gray;
+    color: rgb(65,65,65);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+   
+}
+
+.support-person p:nth-child(1)
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.conv{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px;
+}
+
+.chat-input{
+    display: flex;
+    height: 50px;
+}
+
+.chat-input input
+{
+    width: 80%;
+    height: 100%;
+    border: none;
+    text-indent: 20px;
+    outline: none;
+}
+
+.chat-input button
+{
+    width: 20%;
+    height: 100%;
+    background-color: #159972;
+    color: white;
+    border: none;
+}
+
+.chat-message
+{
+    padding: 10px;
+    background-color: yellowgreen;
+    width: fit-content;
+    max-width: 130px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+.my-message{
+    align-self: flex-end;
+    background-color:burlywood !important;
+}
+
+button:disabled
+{
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.offline{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.online{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.chat-owner{
+    align-self: center;
+}
+
+.time{
+    font-size: 10px;
+    align-self: flex-end;
+}
