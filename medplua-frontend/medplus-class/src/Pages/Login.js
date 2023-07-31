@@ -10,7 +10,7 @@ class LoginComp extends Component
         this.user.current={};
       
     }
-
+    //commenting for github purpose
     readValue=(property,value)=>
     {
         this.user.current[property]=value;
